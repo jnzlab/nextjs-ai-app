@@ -43,6 +43,7 @@ export default function Page() {
           placeholder="Ask me anything..."
           value={input}
           onChange={(e) => setInput(e.target.value)}
+          disabled={isLoading}
         />
         <button type="submit">Send</button>
       </form>
